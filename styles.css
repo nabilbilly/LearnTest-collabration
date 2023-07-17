@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+body{
+    background: #f7f7f9;overflow-x: hidden;
+}
+
+.wrapper .sidebar{
+    background:whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    transition: all 0.5s ease;padding-left: 2%;
+}
+.sidebar{
+    
+}
+.wrapper .sidebar .logo {
+    padding-top: 20px;
+  }
+
+
+.wrapper .sidebar span {
+    color: rgb(77, 8, 180);
+    font-weight: 900;
+  }
+
+
+ a {
+    color: aliceblue;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 0.87rem;
+    color: black;
+  }
+
+/* ********* This is the ASIDE bar section , classes you can locate in this sections are -> sub-sidebar */
+aside .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+aside a {
+  display: flex;
+  color: rgb(77, 8, 180);
+  margin: 2rem;
+  align-items: center;
+  position: relative;
+  height: 3rem;
+  transition: all 300ms ease;
+}
+aside .sub-sidebar a span {
+  font-size: 1.6rem;
+}
+aside .sub-sidebar a:last-child {
+  position: relative;
+  bottom: 1rem;
+  width: 100%;
+}
+
+
+/* ********* This is the section div. classes you can locate in this sections are -> Top_navbar, hamburger,mySidenav , main and also where you can locate the javascript code . icons*/
+/* the sections represents hamburger menu*/
+
+.wrapper .section{
+    width: calc(100% - 20%px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background: rgb(7, 105, 185);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+
+}
+
+.wrapper .section .top_navbar .hamburger a {
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+
+.wrapper .section .top_navbar .icons {
+    padding-top: 10px;
+    padding-left: 900px;
+  }
+  .hamburger{
+    display: none;
+  }
+  
+/* ********* This is represents the second-section in the html code , classes you can locate in this sections are -> second-section, second-top_navbar and the search-form */
+  .wrapper .second-section{
+    width: calc(100% - 20%px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    z-index: 50;
+    transition: left 300ms;
+    top: 0;
+    
+}
+
+.wrapper .second-section .second-top_navbar{
+    background: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    justify-content: space-between;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 50;
+    transition: left 300ms;
+    
+
+}
+
+.wrapper .second-section .second-top_navbar li a{
+font-size: 0.87rem;
+    color: black;
+    padding: 10px;
+}
+
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+
+/* third  */
+/* ********* This is represents the third-section in the html code , classes you can locate in this sections are -> third-section, third-top_navbar ,dash dashboard-one, sales, middle, left,dashboard-two,left and th pie-chart */
+
+.wrapper .third-section{
+    width: calc(100% - 20%px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+    
+}
+
+.wrapper .third-section .third-top_navbar{
+    background:white;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    
+
+}
+
+.wrapper .third-section .third-top_navbar main {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 200px;
+    padding: 50px;
+    display: flex;
+  }
+.wrapper .third-section .third-top_navbar main  .dash {
+    background-color: rgb(7, 105, 185);
+    height: 150px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+      0 5px 14px 0 rgba(0, 0, 0, 0.18);
+  }
+.wrapper .third-section .third-top_navbar main .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+.wrapper .third-section .third-top_navbar main .sales {
+    color: rgb(245, 237, 237);
+    font-size: 50px;
+    padding-left: 40px;
+    padding-top: 10px;
+  }
+  .wrapper .third-section .third-top_navbar main  .dashboard-one {
+    background-color: wheat;
+  }
+  .wrapper .third-section .third-top_navbar main .dashboard-two {
+    background-color: #f87c7c;
+  }
+
+  .sidebar h3 {
+    transition: all 0.5s ease-in-out;
+  }
+  .sidebar h3:hover {
+    color: rgb(210, 59, 59);
+  }
+
+
+main  .wrapper .forth-section{
+    width: calc(100% - 20%px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+main .wrapper .forth-section .forth-top_navbar{
+    background: wheat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+
+}
+  
+.profile-image {
+    padding-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+      0 5px 14px 0 rgba(0, 0, 0, 0.18);
+  }
+  .welcome-message {
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+  .profile-name {
+    padding-left: 55px;
+    padding-top: 20px;
+  }
+  .icons {
+    padding-top: 10px;
+    padding-left: 200px;
+  }
+  
+    .pie-chart {
+    margin-left: -600px;
+    padding-top: 6%;
+  }
+
+
+
+/* This is the css code for the search pannel */
+
+.search-form {
+	right: 200px;
+	top: 200px;
+}
+
+ .search-field {
+	background-color: transparent;
+	background-image: url(https://wp-themes.com/wp-content/themes/twentythirteen/images/search-icon.png);
+	background-position: 5px  center;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	border: none;
+	cursor: pointer;
+	height: 40px;
+	margin: 3px 0;
+	padding: 0 0 0 34px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition:         width 400ms ease, background 400ms ease;
+	width:0px;
+   cursor: pointer;
+}
+
+.search-field:focus {
+	background-color: #000;
+	border: 2px solid #c3c0ab;
+	cursor: text;
+	outline: 0;
+	width: 250px;
+  color:#fff;
+}
+.search-form
+.search-submit { 
+display:none;
+}
+
+
+/* @media starts fron here  */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  @media only screen and (max-width: 1440px){
+    .wrapper .second-section .second-top_navbar .doo{
+        display: none;
+     
+    }
+    .wrapper .second-section .second-top_navbar li a{
+        font-size: 0.87rem;
+            color: black;
+            padding: 0px;
+            padding-left: 40px;
+  }
+}
+ 
+  @media only screen and (max-width: 768px){
+    .hamburger{
+        display: inline;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .wrapper .section{
+        width: 100%;
+        margin-left: 0px;
+        transition: all 0.5s ease;
+    }
+   
+    .wrapper .section .top_navbar{
+        background: rgb(7, 105, 185);
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        justify-content: space-between;
+    
+    }
+
+    .wrapper .section .top_navbar .icons {
+        display: inline-flex;
+        padding-left: 30px;
+      }
+    
+    .wrapper .second-section{
+        width: 100%;
+        margin-left: 0px;
+        transition: all 0.5s ease;
+        justify-content: space-between;
+        padding: 1rem;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+        z-index: 50;
+        transition: left 300ms;
+        top: 0;
+        
+    }
+    
+    .wrapper .second-section .second-top_navbar{
+        background: white;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        justify-content: space-between;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+        top: 0;
+        z-index: 50;
+        transition: left 300ms;
+        
+    
+    }
+
+    .wrapper .second-section .second-top_navbar .do{
+        display: none;
+    }
+
+
+
+    .wrapper .third-section{
+        width: 100%;
+        margin-left: 0px;
+        transition: all 0.5s ease;
+        display: flex;
+        
+    }
+    
+    .wrapper .third-section .third-top_navbar{
+        background:white;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        justify-content: space-between;
+        
+    
+    }
+
+    .wrapper .third-section .third-top_navbar main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .pie-chart {
+        margin-left: -240px;
+        padding-top: 6%;
+      }
+
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      }
+      
+  }
+
+
+
+/* please this as been the change commited and can be editable and can be updated . let get in touch if you need further explainations Thank you  */

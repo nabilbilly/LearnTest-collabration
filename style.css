@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  background: white;
+}
+
+.logo {
+  padding-top: 20px;
+}
+span {
+  color: rgb(77, 8, 180);
+  font-weight: 900;
+}
+a {
+  color: aliceblue;
+}
+img {
+  display: block;
+}
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 0.87rem;
+  color: black;
+}
+.profile-picture {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+}
+P {
+  color: darkcyan;
+}
+.container {
+  margin: 20px;
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  grid-template-columns: 14rem auto 23rem;
+}
+aside {
+}
+
+aside .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+aside a {
+  display: flex;
+  color: rgb(77, 8, 180);
+  margin: 2rem;
+  align-items: center;
+  position: relative;
+  height: 3rem;
+  transition: all 300ms ease;
+}
+aside .sidebar a span {
+  font-size: 1.6rem;
+}
+aside .sidebar a:last-child {
+  position: relative;
+  bottom: 1rem;
+  width: 100%;
+}
+.sidebar {
+  margin-left: -25px;
+}
+main {
+  margin-top: 1.4rem;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: #f7f7f9;
+  height: 200px;
+  padding: 50px;
+}
+.dash {
+  background-color: rgb(136, 102, 229);
+  height: 150px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.sales {
+  color: rgb(245, 237, 237);
+  font-size: 50px;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.dashboard-one {
+  background-color: #807cec;
+}
+.dashboard-two {
+  background-color: #f87c7c;
+}
+.sidebar h3 {
+  transition: all 0.5s ease-in-out;
+}
+.sidebar h3:hover {
+  color: rgb(210, 59, 59);
+}
+.profile-image {
+  padding-left: 20px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+.welcome-message {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+.profile-name {
+  padding-left: 55px;
+  padding-top: 20px;
+}
+.icons {
+  padding-top: 10px;
+  padding-left: 200px;
+}
+
+.pie-chart {
+  margin-left: -500px;
+  padding-top: 100px;
+}
